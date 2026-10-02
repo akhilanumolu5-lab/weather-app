@@ -233,8 +233,8 @@
     }
 
     // ---- animation building blocks
-    function popIn(scaleP, t, final, dims) {
-        var f = final || 100, mk = dims === 2 ? S2 : S3;
+    function popIn(scaleP, t, finalScale, dims) {
+        var f = finalScale || 100, mk = dims === 2 ? S2 : S3;
         K(scaleP, t, mk(0)); K(scaleP, t + 0.18, mk(f * 1.18)); K(scaleP, t + 0.30, mk(f * 0.94)); K(scaleP, t + 0.42, mk(f));
     }
     function ring(comp, name, pos, t, col, size, maxScale) {
